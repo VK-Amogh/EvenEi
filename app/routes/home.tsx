@@ -105,7 +105,7 @@ export default function Home() {
           <h1 className={styles.heroTitle}>
             <div className={styles.projectLabel}>PROJECT:</div>
             <div className={styles.specularLabel}>
-              <ShinyText text="SPECULAR" disabled={false} speed={3} spread={90} color="#b5b5b5" shineColor="#C0C0C0" className={styles.specularLabel} direction="left" />
+              <ShinyText text="SPECULAR" disabled={false} speed={3} spread={90} color="#b5b5b5" shineColor="#ffffff" className={styles.specularLabel} direction="left" />
             </div>
           </h1>
           <div className={styles.byContainer}>
@@ -134,7 +134,9 @@ export default function Home() {
         <div className={styles.sectionInner}>
           <div className={styles.sectionHeader}>
             <span className={styles.sectionTag}>The Problem</span>
-            <h2 className={styles.sectionTitle}>Why Current Smart Glasses Fail</h2>
+            <ScrollReveal baseRotation={0} blurStrength={3} textClassName={styles.sectionTitle} containerClassName={styles.sectionTitle}>
+              Why Current Smart Glasses Fail
+            </ScrollReveal>
             <p className={styles.sectionDesc}>
               Most smart glasses today face the same fundamental issues. As a result, they remain niche, costly, and impractical for everyday use. SpecEI exists to challenge this approach.
             </p>
@@ -169,7 +171,9 @@ export default function Home() {
         <div className={styles.sectionInner}>
           <div className={styles.sectionHeader}>
             <span className={styles.sectionTag}>The Core Idea</span>
-            <h2 className={styles.sectionTitle}>Software-First Intelligence</h2>
+            <ScrollReveal baseRotation={0} blurStrength={3} textClassName={styles.sectionTitle} containerClassName={styles.sectionTitle}>
+              Software-First Intelligence
+            </ScrollReveal>
             <p className={styles.sectionDesc}>
               SpecEI is based on one core principle: Do not make hardware smarter than it needs to be. Make the system smarter instead.
             </p>
@@ -189,22 +193,22 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.coreFeatures}>
-                <div className={styles.coreFeature}>
+                <SpotlightCard className={styles.coreFeature} spotlightColor="rgba(0, 255, 136, 0.2)">
                   <Feather size={18} className={styles.coreFeatureIcon} />
                   <span className={styles.coreFeatureText}>Lightweight Design</span>
-                </div>
-                <div className={styles.coreFeature}>
+                </SpotlightCard>
+                <SpotlightCard className={styles.coreFeature} spotlightColor="rgba(0, 255, 136, 0.2)">
                   <Zap size={18} className={styles.coreFeatureIcon} />
                   <span className={styles.coreFeatureText}>Energy Efficient</span>
-                </div>
-                <div className={styles.coreFeature}>
+                </SpotlightCard>
+                <SpotlightCard className={styles.coreFeature} spotlightColor="rgba(0, 255, 136, 0.2)">
                   <Wallet size={18} className={styles.coreFeatureIcon} />
                   <span className={styles.coreFeatureText}>Affordable</span>
-                </div>
-                <div className={styles.coreFeature}>
+                </SpotlightCard>
+                <SpotlightCard className={styles.coreFeature} spotlightColor="rgba(0, 255, 136, 0.2)">
                   <RefreshCw size={18} className={styles.coreFeatureIcon} />
                   <span className={styles.coreFeatureText}>Upgradeable</span>
-                </div>
+                </SpotlightCard>
               </div>
             </div>
           </div>
@@ -216,7 +220,9 @@ export default function Home() {
         <div className={styles.sectionInner}>
           <div className={styles.sectionHeader}>
             <span className={styles.sectionTag}>System Architecture</span>
-            <h2 className={styles.sectionTitle}>Intelligence Flow</h2>
+            <ScrollReveal baseRotation={0} blurStrength={3} textClassName={styles.sectionTitle} containerClassName={styles.sectionTitle}>
+              Intelligence Flow
+            </ScrollReveal>
             <p className={styles.sectionDesc}>
               This architecture keeps the glasses simple while enabling advanced intelligence. Each component serves a specific purpose in the system.
             </p>
@@ -268,7 +274,9 @@ export default function Home() {
         <div className={styles.sectionInner}>
           <div className={styles.sectionHeader}>
             <span className={styles.sectionTag}>Products</span>
-            <h2 className={styles.sectionTitle}>SpecEI Models</h2>
+            <ScrollReveal baseRotation={0} blurStrength={3} textClassName={styles.sectionTitle} containerClassName={styles.sectionTitle}>
+              SpecEI Models
+            </ScrollReveal>
             <p className={styles.sectionDesc}>
               SpecEI is designed as a modular project with three configurations, each optimized for different use cases and experimentation levels.
             </p>
@@ -367,7 +375,9 @@ export default function Home() {
         <div className={styles.sectionInner}>
           <div className={styles.sectionHeader}>
             <span className={styles.sectionTag}>Technology</span>
-            <h2 className={styles.sectionTitle}>Software and AI Intelligence</h2>
+            <ScrollReveal baseRotation={0} blurStrength={3} textClassName={styles.sectionTitle} containerClassName={styles.sectionTitle}>
+              Software and AI Intelligence
+            </ScrollReveal>
             <p className={styles.sectionDesc}>
               The intelligence of SpecEI lives primarily in software. Processing is split intelligently: on-device logic for efficiency, mobile-based AI for depth.
             </p>
@@ -419,52 +429,54 @@ export default function Home() {
         <div className={styles.sectionInner}>
           <div className={styles.sectionHeader}>
             <span className={styles.sectionTag}>Mobile App</span>
-            <h2 className={styles.sectionTitle}>Companion Mobile Application</h2>
+            <ScrollReveal baseRotation={0} blurStrength={3} textClassName={styles.sectionTitle} containerClassName={styles.sectionTitle}>
+              Companion Mobile Application
+            </ScrollReveal>
             <p className={styles.sectionDesc}>
               The mobile app is the control and intelligence hub of SpecEI. The glasses sense. The app understands. The system responds.
             </p>
           </div>
           <div className={styles.appGrid}>
-            <div className={styles.appCard}>
+            <SpotlightCard className={styles.appCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <Link2 size={32} className={styles.appIcon} />
               <h4 className={styles.appTitle}>Pairing</h4>
               <p className={styles.appDesc}>Device pairing and management</p>
-            </div>
-            <div className={styles.appCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.appCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <RotateCcw size={32} className={styles.appIcon} />
               <h4 className={styles.appTitle}>Sync</h4>
               <p className={styles.appDesc}>Voice and video synchronization</p>
-            </div>
-            <div className={styles.appCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.appCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <Bot size={32} className={styles.appIcon} />
               <h4 className={styles.appTitle}>AI Assistant</h4>
               <p className={styles.appDesc}>Natural language interaction</p>
-            </div>
-            <div className={styles.appCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.appCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <Search size={32} className={styles.appIcon} />
               <h4 className={styles.appTitle}>Search</h4>
               <p className={styles.appDesc}>Searchable memory and context recall</p>
-            </div>
-            <div className={styles.appCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.appCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <Lock size={32} className={styles.appIcon} />
               <h4 className={styles.appTitle}>Privacy</h4>
               <p className={styles.appDesc}>Privacy and data controls</p>
-            </div>
-            <div className={styles.appCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.appCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <HardDrive size={32} className={styles.appIcon} />
               <h4 className={styles.appTitle}>Storage</h4>
               <p className={styles.appDesc}>Secure data management</p>
-            </div>
-            <div className={styles.appCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.appCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <Settings size={32} className={styles.appIcon} />
               <h4 className={styles.appTitle}>Settings</h4>
               <p className={styles.appDesc}>Unified control center</p>
-            </div>
-            <div className={styles.appCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.appCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <BarChart3 size={32} className={styles.appIcon} />
               <h4 className={styles.appTitle}>Analytics</h4>
               <p className={styles.appDesc}>Usage insights and stats</p>
-            </div>
+            </SpotlightCard>
           </div>
         </div>
       </section>
@@ -482,48 +494,48 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.useCasesGrid}>
-            <div className={styles.useCase}>
+            <SpotlightCard className={styles.useCase} spotlightColor="rgba(0, 255, 136, 0.2)">
               <Camera size={36} className={styles.useCaseIcon} />
               <h4 className={styles.useCaseTitle}>Hands-Free Capture</h4>
               <p className={styles.useCaseDesc}>
                 Capture information without interrupting your activities. Perfect for documentation and memory.
               </p>
-            </div>
-            <div className={styles.useCase}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.useCase} spotlightColor="rgba(0, 255, 136, 0.2)">
               <Brain size={36} className={styles.useCaseIcon} />
               <h4 className={styles.useCaseTitle}>Contextual Recall</h4>
               <p className={styles.useCaseDesc}>
                 Intelligent memory retrieval based on context, time, and relevance.
               </p>
-            </div>
-            <div className={styles.useCase}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.useCase} spotlightColor="rgba(0, 255, 136, 0.2)">
               <BookOpen size={36} className={styles.useCaseIcon} />
               <h4 className={styles.useCaseTitle}>Learning</h4>
               <p className={styles.useCaseDesc}>
                 Interactive learning experiences with real-time explanations and visual recognition.
               </p>
-            </div>
-            <div className={styles.useCase}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.useCase} spotlightColor="rgba(0, 255, 136, 0.2)">
               <ClipboardList size={36} className={styles.useCaseIcon} />
               <h4 className={styles.useCaseTitle}>Documentation</h4>
               <p className={styles.useCaseDesc}>
                 Professional-grade capture for field work, inspections, and technical documentation.
               </p>
-            </div>
-            <div className={styles.useCase}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.useCase} spotlightColor="rgba(0, 255, 136, 0.2)">
               <Lightbulb size={36} className={styles.useCaseIcon} />
               <h4 className={styles.useCaseTitle}>Daily Assistance</h4>
               <p className={styles.useCaseDesc}>
                 Everyday help with reminders, information, and contextual awareness.
               </p>
-            </div>
-            <div className={styles.useCase}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.useCase} spotlightColor="rgba(0, 255, 136, 0.2)">
               <FlaskConical size={36} className={styles.useCaseIcon} />
               <h4 className={styles.useCaseTitle}>Experimentation</h4>
               <p className={styles.useCaseDesc}>
                 AI and system experimentation for developers and researchers.
               </p>
-            </div>
+            </SpotlightCard>
           </div>
         </div>
       </section>
@@ -542,34 +554,34 @@ export default function Home() {
           </div>
           <div className={styles.privacyContent}>
             <div className={styles.privacyPoints}>
-              <div className={styles.privacyPoint}>
+              <SpotlightCard className={styles.privacyPoint} spotlightColor="rgba(0, 255, 136, 0.2)">
                 <Lock size={28} className={styles.privacyIcon} />
                 <div className={styles.privacyText}>
                   <h4 className={styles.privacyTitle}>User-Controlled Data Flow</h4>
                   <p className={styles.privacyDesc}>Complete control over what data is collected, stored, and shared.</p>
                 </div>
-              </div>
-              <div className={styles.privacyPoint}>
+              </SpotlightCard>
+              <SpotlightCard className={styles.privacyPoint} spotlightColor="rgba(0, 255, 136, 0.2)">
                 <CheckCircle2 size={28} className={styles.privacyIcon} />
                 <div className={styles.privacyText}>
                   <h4 className={styles.privacyTitle}>Explicit Permissions</h4>
                   <p className={styles.privacyDesc}>Every action requires clear user consent. No hidden data collection.</p>
                 </div>
-              </div>
-              <div className={styles.privacyPoint}>
+              </SpotlightCard>
+              <SpotlightCard className={styles.privacyPoint} spotlightColor="rgba(0, 255, 136, 0.2)">
                 <Smartphone size={28} className={styles.privacyIcon} />
                 <div className={styles.privacyText}>
                   <h4 className={styles.privacyTitle}>Local Processing</h4>
                   <p className={styles.privacyDesc}>Sensitive data processed on-device whenever possible.</p>
                 </div>
-              </div>
-              <div className={styles.privacyPoint}>
+              </SpotlightCard>
+              <SpotlightCard className={styles.privacyPoint} spotlightColor="rgba(0, 255, 136, 0.2)">
                 <Eye size={28} className={styles.privacyIcon} />
                 <div className={styles.privacyText}>
                   <h4 className={styles.privacyTitle}>Transparent Behavior</h4>
                   <p className={styles.privacyDesc}>Clear indicators of what the system is doing at all times.</p>
                 </div>
-              </div>
+              </SpotlightCard>
             </div>
             <div className={styles.privacyVisual}>
               <div className={styles.shieldContainer}>
@@ -595,7 +607,7 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.comparisonGrid}>
-            <div className={styles.comparisonCard}>
+            <SpotlightCard className={styles.comparisonCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <h4 className={styles.comparisonTitle}>Architecture Difference</h4>
               <div className={styles.comparisonPoints}>
                 <div className={styles.comparisonPoint}>
@@ -615,8 +627,8 @@ export default function Home() {
                   <span className={styles.comparisonPointText}>Better energy efficiency</span>
                 </div>
               </div>
-            </div>
-            <div className={styles.comparisonCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.comparisonCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <h4 className={styles.comparisonTitle}>Intelligence and Upgradability</h4>
               <div className={styles.comparisonPoints}>
                 <div className={styles.comparisonPoint}>
@@ -636,8 +648,8 @@ export default function Home() {
                   <span className={styles.comparisonPointText}>Hardware remains stable while intelligence evolves</span>
                 </div>
               </div>
-            </div>
-            <div className={styles.comparisonCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.comparisonCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <h4 className={styles.comparisonTitle}>Cost and Accessibility</h4>
               <div className={styles.comparisonPoints}>
                 <div className={styles.comparisonPoint}>
@@ -657,8 +669,8 @@ export default function Home() {
                   <span className={styles.comparisonPointText}>Lower entry barriers</span>
                 </div>
               </div>
-            </div>
-            <div className={styles.comparisonCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.comparisonCard} spotlightColor="rgba(0, 255, 136, 0.2)">
               <h4 className={styles.comparisonTitle}>Hardware Philosophy</h4>
               <div className={styles.comparisonPoints}>
                 <div className={styles.comparisonPoint}>
@@ -678,7 +690,7 @@ export default function Home() {
                   <span className={styles.comparisonPointText}>Long-term wearability</span>
                 </div>
               </div>
-            </div>
+            </SpotlightCard>
           </div>
         </div>
       </section>
