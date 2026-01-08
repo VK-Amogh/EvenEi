@@ -41,6 +41,10 @@ import { FaultyTerminal } from '~/components/faulty-terminal/faulty-terminal';
 import { BlurText } from '~/components/blur-text/blur-text';
 import { ScrollVelocity } from '~/components/scroll-velocity/scroll-velocity';
 import styles from './home.module.css';
+import ShinyText from '~/components/shiny-text/ShinyText';
+import ScrollReveal from '~/components/scroll-reveal/ScrollReveal';
+import SpotlightCard from '~/components/spotlight-card/SpotlightCard';
+
 
 export function meta() {
   return [
@@ -100,7 +104,9 @@ export default function Home() {
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
             <div className={styles.projectLabel}>PROJECT:</div>
-            <div className={styles.specularLabel}>SPECULAR</div>
+            <div className={styles.specularLabel}>
+              <ShinyText text="SPECULAR" disabled={false} speed={3} spread={90} color="#b5b5b5" shineColor="#C0C0C0" className={styles.specularLabel} direction="left" />
+            </div>
           </h1>
           <div className={styles.byContainer}>
             <span className={styles.byText}>by</span>
@@ -134,26 +140,26 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.problemGrid}>
-            <div className={styles.problemCard}>
+            <SpotlightCard className={styles.problemCard} spotlightColor="rgba(239, 68, 68, 0.2)">
               <Scale size={28} className={styles.problemIcon} />
               <p className={styles.problemText}>They are bulky and uncomfortable for extended wear</p>
-            </div>
-            <div className={styles.problemCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.problemCard} spotlightColor="rgba(239, 68, 68, 0.2)">
               <DollarSign size={28} className={styles.problemIcon} />
               <p className={styles.problemText}>They rely on expensive specialized hardware</p>
-            </div>
-            <div className={styles.problemCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.problemCard} spotlightColor="rgba(239, 68, 68, 0.2)">
               <BatteryLow size={28} className={styles.problemIcon} />
               <p className={styles.problemText}>They suffer from poor battery life and heat issues</p>
-            </div>
-            <div className={styles.problemCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.problemCard} spotlightColor="rgba(239, 68, 68, 0.2)">
               <TrendingDown size={28} className={styles.problemIcon} />
               <p className={styles.problemText}>They become obsolete quickly after purchase</p>
-            </div>
-            <div className={styles.problemCard}>
+            </SpotlightCard>
+            <SpotlightCard className={styles.problemCard} spotlightColor="rgba(239, 68, 68, 0.2)">
               <Wrench size={28} className={styles.problemIcon} />
               <p className={styles.problemText}>They are difficult to improve after launch</p>
-            </div>
+            </SpotlightCard>
           </div>
         </div>
       </section>
@@ -217,41 +223,41 @@ export default function Home() {
           </div>
           <div className={styles.flowchartContainer}>
             <div className={styles.flowchartGrid}>
-              <div className={styles.flowNode}>
+              <SpotlightCard className={styles.flowNode} spotlightColor="rgba(0, 255, 136, 0.25)">
                 <Glasses size={32} className={styles.flowNodeIcon} />
                 <span className={styles.flowNodeTitle}>Glasses Hardware</span>
                 <span className={styles.flowNodeDesc}>Captures visual and audio data</span>
-              </div>
+              </SpotlightCard>
               <div className={styles.flowArrow}><ChevronDown size={22} style={{ transform: 'rotate(-90deg)' }} /></div>
-              <div className={styles.flowNode}>
+              <SpotlightCard className={styles.flowNode} spotlightColor="rgba(0, 255, 136, 0.25)">
                 <Cpu size={32} className={styles.flowNodeIcon} />
                 <span className={styles.flowNodeTitle}>Embedded Firmware</span>
                 <span className={styles.flowNodeDesc}>Buffering, power management</span>
-              </div>
+              </SpotlightCard>
               <div className={styles.flowArrow}><ChevronDown size={22} style={{ transform: 'rotate(-90deg)' }} /></div>
-              <div className={styles.flowNode}>
+              <SpotlightCard className={styles.flowNode} spotlightColor="rgba(0, 255, 136, 0.25)">
                 <Radio size={32} className={styles.flowNodeIcon} />
                 <span className={styles.flowNodeTitle}>Wireless Comm</span>
                 <span className={styles.flowNodeDesc}>Securely transmits data</span>
-              </div>
+              </SpotlightCard>
               <div className={styles.flowArrow}><ChevronDown size={22} style={{ transform: 'rotate(-90deg)' }} /></div>
-              <div className={styles.flowNode}>
+              <SpotlightCard className={styles.flowNode} spotlightColor="rgba(0, 255, 136, 0.25)">
                 <Smartphone size={32} className={styles.flowNodeIcon} />
                 <span className={styles.flowNodeTitle}>Companion App</span>
                 <span className={styles.flowNodeDesc}>AI processing, storage</span>
-              </div>
+              </SpotlightCard>
               <div className={styles.flowArrow}><ChevronDown size={22} style={{ transform: 'rotate(-90deg)' }} /></div>
-              <div className={styles.flowNode}>
+              <SpotlightCard className={styles.flowNode} spotlightColor="rgba(0, 255, 136, 0.25)">
                 <Brain size={32} className={styles.flowNodeIcon} />
                 <span className={styles.flowNodeTitle}>AI Intelligence</span>
                 <span className={styles.flowNodeDesc}>Insights, memory recall</span>
-              </div>
+              </SpotlightCard>
               <div className={styles.flowArrow}><ChevronDown size={22} style={{ transform: 'rotate(-90deg)' }} /></div>
-              <div className={styles.flowNode}>
+              <SpotlightCard className={styles.flowNode} spotlightColor="rgba(0, 255, 136, 0.25)">
                 <User size={32} className={styles.flowNodeIcon} />
                 <span className={styles.flowNodeTitle}>User Interaction</span>
                 <span className={styles.flowNodeDesc}>Audio or app response</span>
-              </div>
+              </SpotlightCard>
             </div>
           </div>
         </div>
@@ -468,7 +474,9 @@ export default function Home() {
         <div className={styles.sectionInner}>
           <div className={styles.sectionHeader}>
             <span className={styles.sectionTag}>Applications</span>
-            <h2 className={styles.sectionTitle}>Realistic Use Cases</h2>
+            <ScrollReveal baseRotation={0} blurStrength={3} textClassName={styles.sectionTitle} containerClassName={styles.sectionTitle}>
+              Realistic Use Cases
+            </ScrollReveal>
             <p className={styles.sectionDesc}>
               SpecEI is designed for realistic scenarios. It avoids exaggerated claims and focuses on achievable intelligence.
             </p>
@@ -525,7 +533,9 @@ export default function Home() {
         <div className={styles.sectionInner}>
           <div className={styles.sectionHeader}>
             <span className={styles.sectionTag}>Trust</span>
-            <h2 className={styles.sectionTitle}>Privacy and Ethics</h2>
+            <ScrollReveal baseRotation={0} blurStrength={3} textClassName={styles.sectionTitle} containerClassName={styles.sectionTitle}>
+              Privacy and Ethics
+            </ScrollReveal>
             <p className={styles.sectionDesc}>
               Privacy is treated as an engineering requirement. SpecEI is designed to respect user trust by default.
             </p>
@@ -577,7 +587,9 @@ export default function Home() {
         <div className={styles.sectionInner}>
           <div className={styles.sectionHeader}>
             <span className={styles.sectionTag}>Advantage</span>
-            <h2 className={styles.sectionTitle}>Why SpecEI Is Different</h2>
+            <ScrollReveal baseRotation={0} blurStrength={3} textClassName={styles.sectionTitle} containerClassName={styles.sectionTitle}>
+              Why SpecEI Is Different
+            </ScrollReveal>
             <p className={styles.sectionDesc}>
               Most existing smart glasses use a hardware-heavy intelligence model. SpecEI takes a fundamentally different approach.
             </p>
@@ -675,10 +687,11 @@ export default function Home() {
       <section id="funding" className={`${styles.section} ${styles.fundingSection}`}>
         <div className={styles.fundingContent}>
           <span className={styles.sectionTag}>Support</span>
-          <h2 className={styles.fundingTitle}>
-            Why SpecEI
-            <span className={styles.fundingTitleAccent}>Deserves Funding</span>
-          </h2>
+          <div className={styles.fundingTitle}>
+            <ScrollReveal baseRotation={0} blurStrength={3} textClassName={styles.fundingTitle} containerClassName={styles.fundingTitle}>
+              Why SpecEI Deserves Funding
+            </ScrollReveal>
+          </div>
           <p className={styles.fundingDesc}>
             SpecEI is currently a research and development project. What makes it valuable is not polish - it is architecture, direction, and system thinking. SpecEI represents a scalable and ethical direction for intelligent wearables.
           </p>
@@ -719,7 +732,9 @@ export default function Home() {
       <section className={`${styles.section} ${styles.closingSection}`}>
         <div className={styles.closingContent}>
           <span className={styles.sectionTag}>Vision</span>
-          <h2 className={styles.sectionTitle}>A Step Toward Wearables That Actually Work</h2>
+          <ScrollReveal baseRotation={0} blurStrength={3} textClassName={styles.sectionTitle} containerClassName={styles.sectionTitle}>
+            A Step Toward Wearables That Actually Work
+          </ScrollReveal>
           <p className={styles.sectionDesc} style={{ margin: '0 auto' }}>
             SpecEI is not just about smart glasses. It is about better system design, smarter intelligence distribution, practical AI deployment, and responsible engineering.
           </p>
