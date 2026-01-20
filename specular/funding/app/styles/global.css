@@ -1,0 +1,48 @@
+html {
+  font: var(--font-body);
+  color: var(--color-specular-text-primary);
+  background-color: var(--color-specular-bg-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-specular-bg-main);
+  color: var(--color-specular-text-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Custom Scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-specular-bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-8);
+}
+
+/* Global highlight style for important text */
+.highlight {
+  color: var(--color-highlight);
+  font-weight: 600;
+}
